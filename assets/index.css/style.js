@@ -26,6 +26,10 @@ let questionList = [
 
 
 quiz.style.display = "none";
+qn1button.style.display = "none";
+qn2button.style.display = "none";
+qn3button.style.display = "none";
+qn4button.style.display = "none";
 
 function details() {
 
@@ -33,6 +37,7 @@ function details() {
   headerText.innerHTML = "Greetings," + studentDetails.value + ",attempt the questions below."
   detailsEntered.style.display = "none";
   quiz.style.display = "block";
+  qn1button.style.display = "block";
   question.innerHTML = questionList[iterationNumber];
 
 }
@@ -74,12 +79,43 @@ function dFunction() {
 }
 
 submitQn1() {
-  if (qnChoice == "d") {
+  if (qnChoice == "a") {
     score += 1;
   }
   iterationNumber += 1;
   question.innerHTML = questionList[iterationNumber];
+  qn1button.style.display = "none";
+  qn2button.style.display = "block";
+}
 
+submitQn2() {
+  if (qnChoice == "b") {
+    score += 1;
+  }
+  iterationNumber += 1;
+  question.innerHTML = questionList[iterationNumber];
+  qn2button.style.display = "none";
+  qn3button.style.display = "block";
+}
+
+submitQn3() {
+  if (qnChoice == "c") {
+    score += 1;
+  }
+  iterationNumber += 1;
+  question.innerHTML = questionList[iterationNumber];
+  qn3button.style.display = "none";
+  qn4button.style.display = "block";
+}
+
+submitQn4() {
+  if (qnChoice == "d") {
+    score += 1;
+  }
+  iterationNumber += 1;
+  question.innerHTML = "Your score is" + score;
+  quiz.style.display = "none";
+  
 }
 
 
