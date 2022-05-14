@@ -4,10 +4,14 @@ body{
   padding: 0px;
 }
 #part1{
-  text-align:left ;
+  text-align:center;
   color: white;
 }
 
 #quiz{
+  text-align: center;
+}
+
+#detailsEntered{
   text-align: center;
 }

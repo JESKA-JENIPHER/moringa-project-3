@@ -24,10 +24,10 @@ let questionList = [
   "Qn4.Who is  the father of computing?"
 ]
 
-let aAnswerList = ["Javascript", "Cascading sport", "HTML", "Alex Graham"]
-let bAnswerList = ["Jstick", "Cascading Style Sheet", "Hatmall", "John Babbage"]
-let cAnswerList = ["Javas", "CSports", "Hypertext mark Up language", "Mike tyson"]
-let dAnswerList = ["None", "Cascading Styles", "Hypertext", "Charles Babbage"]
+let aAnswerList = ["Javascript", "Cascading-sport", "HTML", "AlexGraham"]
+let bAnswerList = ["Jstick", "Cascading Style Sheet", "Hatmall", "JohnBabbage"]
+let cAnswerList = ["Javas", "CSports", "Hypertext-markUp-language", "MikeTyson"]
+let dAnswerList = ["None", "Cascading-Styles", "Hypertext", "CharlesBabbage"]
 
 quiz.style.display = "none";
 qn1button.style.display = "none";
@@ -137,7 +137,7 @@ function submitQn4() {
     score += 1;
   }
   iterationNumber += 1;
-  headerText.innerHTML = "Your score is" + score;
+  headerText.innerHTML = "Your score is" +""+  + score;
   quiz.style.display = "none";
 
   reset();
