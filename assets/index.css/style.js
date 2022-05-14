@@ -41,6 +41,12 @@ function reset() {
   answerC.style.color = "white";
   answerD.style.color = "white";
 
+  question.innerHTML = questionList[iterationNumber];
+  answerA.innerHTML = aAnswerList[iterationNumber];
+  answerB.innerHTML = bAnswerList[iterationNumber];
+  answerC.innerHTML = cAnswerList[iterationNumber];
+  answerD.innerHTML = dAnswerList[iterationNumber];
+
 }
 
 function details() {
