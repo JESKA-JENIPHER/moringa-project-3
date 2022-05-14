@@ -104,6 +104,8 @@ function submitQn1() {
   question.innerHTML = questionList[iterationNumber];
   qn1button.style.display = "none";
   qn2button.style.display = "block";
+
+  reset();
 };
 
 function submitQn2() {
@@ -114,6 +116,8 @@ function submitQn2() {
   question.innerHTML = questionList[iterationNumber];
   qn2button.style.display = "none";
   qn3button.style.display = "block";
+
+  reset();
 };
 
 function submitQn3() {
@@ -124,6 +128,8 @@ function submitQn3() {
   question.innerHTML = questionList[iterationNumber];
   qn3button.style.display = "none";
   qn4button.style.display = "block";
+
+  reset();
 };
 
 function submitQn4() {
@@ -133,6 +139,8 @@ function submitQn4() {
   iterationNumber += 1;
   headerText.innerHTML = "Your score is" + score;
   quiz.style.display = "none";
+
+  reset();
 
 };
 
