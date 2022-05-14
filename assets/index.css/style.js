@@ -52,7 +52,7 @@ function reset() {
 function details() {
 
   headerText.innerHTML = ""
-  headerText.innerHTML = "Greetings," + studentDetails.value + ",attempt the questions below."
+  headerText.innerHTML = "Greetings "  + studentDetails.value + ",attempt the questions below by clicking on the correct answer."
   detailsEntered.style.display = "none";
   quiz.style.display = "block";
   qn1button.style.display = "block";
