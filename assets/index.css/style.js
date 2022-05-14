@@ -1,4 +1,4 @@
-
+//variable definitions//
 var studentDetails = document.querySelector("#studentDetails");
 var headerText = document.querySelector("#headerText");
 var detailsEntered = document.querySelector("#detailsEntered");
@@ -7,9 +7,9 @@ let answerA = document.querySelector("#answerA");
 let answerB = document.querySelector("#answerB");
 let answerC = document.querySelector("#answerC");
 let answerD = document.querySelector("#answerD");
-let qnChoice = "";
+let qnChoice = "";  
 let score = 0;
-let iterationNumber = 0;
+let iterationNumber = 0; // acts like count
 let question = document.querySelector("#question");
 let qn1button = document.querySelector("#qn1button");
 let qn2button = document.querySelector("#qn2button");
@@ -35,6 +35,7 @@ qn2button.style.display = "none";
 qn3button.style.display = "none";
 qn4button.style.display = "none";
 
+//this reset function will avoid rewriting code several times
 function reset() {
   answerA.style.color = "white";
   answerB.style.color = "white";
@@ -49,17 +50,20 @@ function reset() {
 
 }
 
+//this will target the first part of the page before the quiz is displayed
 function details() {
 
   headerText.innerHTML = ""
-  headerText.innerHTML = "Greetings "  + studentDetails.value + ",attempt the questions below by clicking on the correct answer."
-  detailsEntered.style.display = "none";
-  quiz.style.display = "block";
+  headerText.innerHTML = "Greetings "  + studentDetails.value + ",attempt the questions below by clicking on the correct answer." //places the name entered and replaces the initial sentence.
+  detailsEntered.style.display = "none";// will not show the text
+  quiz.style.display = "block";           //shows the text
   qn1button.style.display = "block";
   question.innerHTML = questionList[iterationNumber];
 
 }
 
+
+//functions to dictate the color of text when clicked on
 function aFunction() {
   answerA.style.color = "purple"
   answerB.style.color = "white"
@@ -96,6 +100,8 @@ function dFunction() {
   qnChoice = "d";
 };
 
+
+//button fnts resulting to change of buttons from one qn to another
 function submitQn1() {
   if (qnChoice == "a") {
     score += 1;
@@ -137,7 +143,7 @@ function submitQn4() {
     score += 1;
   }
   iterationNumber += 1;
-  headerText.innerHTML = "Your score is" + "" + + score;
+  headerText.innerHTML = "Your score is" + "" + + score; //will show the score in the headerText
   quiz.style.display = "none";
 
   reset();
