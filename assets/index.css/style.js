@@ -12,11 +12,11 @@ let score = 0;
 let question = document.querySelector("#question")
 
 let questionList = [
-  "Qn1.",
-  "Qn1.",
-  "Qn1.",
-  "Qn1.",
-  "Qn1."
+  "Qn1.What is JS in full?",
+  "Qn2.What is CSS in full?",
+  "Qn3.What is HTML in full?",
+  "Qn4.Who is  the father of computing?"
+  
 
 ]
 
