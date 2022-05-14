@@ -9,6 +9,7 @@ let answerC = document.querySelector("#answerC")
 let answerD = document.querySelector("#answerD")
 let qnChoice = "";
 let score = 0;
+let iterationNumber = 0;
 let question = document.querySelector("#question")
 
 let questionList = [
@@ -16,8 +17,6 @@ let questionList = [
   "Qn2.What is CSS in full?",
   "Qn3.What is HTML in full?",
   "Qn4.Who is  the father of computing?"
-  
-
 ]
 
 
@@ -29,6 +28,7 @@ function details() {
   headerText.innerHTML = "Greetings," + studentDetails.value + ",attempt the questions below."
   detailsEntered.style.display = "none";
   quiz.style.display = "block";
+  question.innerHTML = questionList[iterationNumber];
 
 }
 
@@ -72,7 +72,8 @@ submitQn1() {
   if (qnChoice == "d") {
     score += 1;
   }
-    
+  iterationNumber += 1;
+  question.innerHTML = questionList[iterationNumber];
 
 }
 
