@@ -11,6 +11,11 @@ let qnChoice = "";
 let score = 0;
 let iterationNumber = 0;
 let question = document.querySelector("#question")
+let qn1button = document.querySelector("#qn1button")
+let qn2button = document.querySelector("#qn2button")
+let qn3button = document.querySelector("#qn3button")
+let qn4button = document.querySelector("#qn4button")
+
 
 let questionList = [
   "Qn1.What is JS in full?",
@@ -76,6 +81,7 @@ submitQn1() {
   question.innerHTML = questionList[iterationNumber];
 
 }
+
 
 
 
