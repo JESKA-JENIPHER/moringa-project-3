@@ -35,6 +35,14 @@ qn2button.style.display = "none";
 qn3button.style.display = "none";
 qn4button.style.display = "none";
 
+function reset() {
+  answerA.style.color = "white";
+  answerB.style.color = "white";
+  answerC.style.color = "white";
+  answerD.style.color = "white";
+
+}
+
 function details() {
 
   headerText.innerHTML = ""
