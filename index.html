@@ -1,18 +1,41 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/index.css/style.css">
-  <title>Quiz</title>
-</head>
-<body>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/index.css/style.css">
+    <script type="text/javascript" src="./assets/index.css/style.js"></script>
+    <title>Quiz</title>
+  </head>
+
+  <body>
     <div id="part1">
-      
+
       <h1>Attempt the questions below</h1>
-      <h2>Enter your name</h2> <br>
-      <input>
+      <h2 id="headerText">Enter your name and registration</h2> <br>
+
 
     </div>
-</body>
+
+    <div id="detailsEntered">
+
+      <input id="studentDetails"><br>
+      <button onclick="details()">Enter</button>
+
+    </div>
+
+    <div id="quiz">
+      <h3 id="question"></h3>
+      <div id="answerA" onclick="aFunction()">oo</div>
+      <div id="answerB" onclick="bfunction()">gg</div>
+      <div id="answerC" onclick="cfunction()">tt</div>
+      <div id="answerD" onclick="dFunction()">ww</div> <br>
+
+      <div id="qn1button" onclick="submitQn1()"><button>Submit qn1</button></div>
+
+    </div>
+
+  </body>
+
 </html>

@@ -1,0 +1,13 @@
+body{
+  background-color: darkturquoise;
+  margin: 0px;
+  padding: 0px;
+}
+#part1{
+  text-align:left ;
+  color: white;
+}
+
+#quiz{
+  text-align: center;
+}
