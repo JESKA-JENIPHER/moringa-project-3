@@ -7,9 +7,12 @@ let answerA = document.querySelector("#answerA");
 let answerB = document.querySelector("#answerB");
 let answerC = document.querySelector("#answerC");
 let answerD = document.querySelector("#answerD");
+
+
 let qnChoice = "";  // place holder for the answer
 let score = 0;
 let iterationNumber = 0; // acts like count
+
 let question = document.querySelector("#question");
 let qn1button = document.querySelector("#qn1button");
 let qn2button = document.querySelector("#qn2button");
@@ -28,6 +31,8 @@ let aAnswerList = ["A.Javascript", "A.Cascading-sport", "A.HTML", "A.AlexGraham"
 let bAnswerList = ["B.Jstick", "B.Cascading Style Sheet", "B.Hatmall", "B.JohnBabbage"]
 let cAnswerList = ["C.Javas", "C.CSports", "C.Hypertext-markUp-language", "C.MikeTyson"]
 let dAnswerList = ["D.None", "D.Cascading-Styles", "D.Hypertext", "D.CharlesBabbage"]
+
+
 
 quiz.style.display = "none";
 qn1button.style.display = "none";
@@ -54,9 +59,9 @@ function reset() {
 function details() {
 
   headerText.innerHTML = ""
-  headerText.innerHTML = "Greetings " + studentDetails.value + ",attempt the questions below by clicking on the correct answer." //places the name entered and replaces the initial sentence.
-  detailsEntered.style.display = "none";// will not show the text
-  quiz.style.display = "block";           //shows the text
+  headerText.innerHTML = "Greetings " + studentDetails.value + ",attempt the questions below by clicking on the correct answer."                                    //replaces the name entered and replaces the initial sentence.
+  detailsEntered.style.display = "none";       // will not show the text
+  quiz.style.display = "block";                 //shows the text
   qn1button.style.display = "block";
   question.innerHTML = questionList[iterationNumber];
 
