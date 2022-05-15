@@ -3,6 +3,7 @@ body{
   margin: 0px;
   padding: 0px;
   font-size: 20px;
+  box-sizing: border-box;
 }
 #part1{
   text-align:center;

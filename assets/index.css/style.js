@@ -144,9 +144,12 @@ function submitQn3() {
 };
 
 function submitQn4() {
+
   if (qnChoice == "d") {
+
     score += 1;
   }
+
   iterationNumber += 1;
   headerText.innerHTML = "Your score is :" + " " + + score; //will show the score in the headerText
   quiz.style.display = "none";
