@@ -7,7 +7,7 @@ let answerA = document.querySelector("#answerA");
 let answerB = document.querySelector("#answerB");
 let answerC = document.querySelector("#answerC");
 let answerD = document.querySelector("#answerD");
-let qnChoice = "";  
+let qnChoice = "";  // place holder for the answer
 let score = 0;
 let iterationNumber = 0; // acts like count
 let question = document.querySelector("#question");
@@ -54,7 +54,7 @@ function reset() {
 function details() {
 
   headerText.innerHTML = ""
-  headerText.innerHTML = "Greetings "  + studentDetails.value + ",attempt the questions below by clicking on the correct answer." //places the name entered and replaces the initial sentence.
+  headerText.innerHTML = "Greetings " + studentDetails.value + ",attempt the questions below by clicking on the correct answer." //places the name entered and replaces the initial sentence.
   detailsEntered.style.display = "none";// will not show the text
   quiz.style.display = "block";           //shows the text
   qn1button.style.display = "block";
@@ -143,7 +143,7 @@ function submitQn4() {
     score += 1;
   }
   iterationNumber += 1;
-  headerText.innerHTML = "Your score is" + "" + + score; //will show the score in the headerText
+  headerText.innerHTML = "Your score is :" + " S" + + score; //will show the score in the headerText
   quiz.style.display = "none";
 
   reset();
