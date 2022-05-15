@@ -1,5 +1,5 @@
 //variable definitions//
-var studentDetails = document.querySelector("#studentDetails");
+var studentDetails = document.querySelector("#studentDetails");    //name variables same as id to avoid confusion.
 var headerText = document.querySelector("#headerText");
 var detailsEntered = document.querySelector("#detailsEntered");
 let quiz = document.querySelector("#quiz");
@@ -143,7 +143,7 @@ function submitQn4() {
     score += 1;
   }
   iterationNumber += 1;
-  headerText.innerHTML = "Your score is :" + " S" + + score; //will show the score in the headerText
+  headerText.innerHTML = "Your score is :" + " " + + score; //will show the score in the headerText
   quiz.style.display = "none";
 
   reset();

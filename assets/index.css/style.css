@@ -2,6 +2,7 @@ body{
   background-color: burlywood;
   margin: 0px;
   padding: 0px;
+  font-size: 20px;
 }
 #part1{
   text-align:center;
@@ -14,5 +15,12 @@ body{
 
 #detailsEntered{
   text-align: center;
+}
+
+button{
+
+  width: 100px;
+  height: 30px;
+  
 }
 
