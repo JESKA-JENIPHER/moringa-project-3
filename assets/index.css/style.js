@@ -151,7 +151,19 @@ function submitQn4() {
   }
 
   iterationNumber += 1;
-  headerText.innerHTML = "Your score is :" + " " + + score; //will show the score in the headerText
+  let percentage = (score / questionList.length) * 100
+  if (percentage >= 80) {
+    document.querySelector("h1").textContent = "Excellently passed!"
+    headerText.innerHTML = "Your score is :" + " " + percentage + "%"; //will show the score in the headerText
+  }
+  else if (percentage >= 50 && percentage < 80) {
+    document.querySelector("h1").textContent = "Fairly Passed!"
+    headerText.innerHTML = "Your score is :" + " " + percentage + "%"; //will show the score in the headerText
+  }
+  else {
+    document.querySelector("h1").textContent = "Poorly done!"
+    headerText.innerHTML = "Your score is :" + " " + percentage + "%"; //will show the score in the headerText
+  }
   quiz.style.display = "none";
 
   reset();
